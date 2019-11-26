@@ -38,6 +38,7 @@ $(function() {
 
   $(".search-input").on("keyup", function() {
     var input = $(".search-input").val();
+    console.log(input);
     $.ajax({
       type: 'GET',
       url: '/tweets/search',

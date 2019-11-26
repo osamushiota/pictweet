@@ -46,7 +46,7 @@ class TweetsController < ApplicationController
   end
 
   def set_tweet
-    @tweet = Tweet.find(params[:id])
+    @tweets = Tweet.find(params[:id])
   end
 
   def move_to_index
